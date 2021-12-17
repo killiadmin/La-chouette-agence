@@ -677,7 +677,12 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 16px;
+    padding: 16px;
+}
+
+.author-commentary{
+    font-size: 14px;
 }
 
 .tight-width-whitespace {
@@ -705,7 +710,6 @@ p {
 }
 
 h2 {
-    font-size: 22px;
     line-height: 1.4em;
 }
 
@@ -717,9 +721,17 @@ h3 {
 }
 
 .med-width-whitespace {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     max-width: 800px;
     margin: auto auto auto auto;
     box-shadow: 0px 0px 0px #000000;
+} 
+
+.col-sm-4{
+    width: auto;
 }
 
 h1 {
@@ -775,7 +787,7 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: white!important;
 }
 
 .btn-atomic-tangerine {
