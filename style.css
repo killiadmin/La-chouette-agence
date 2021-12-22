@@ -816,11 +816,11 @@ h4 {
 }
 
 .bg-banniere {
-    background-image: url("img/banner-top-bottom.jpg");
+    background-image: url("img/banner-top-bottom.webp");
 }
 
 .bg-presentation {
-    background-image: url("img/banner-middle.jpg");
+    background-image: url("img/banner-middle.webp");
 }
 
 @media (max-width: 1024px) {
