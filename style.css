@@ -7,12 +7,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-a,
-button {
-    transition: all .3s ease-in-out;
-    outline: none!important;
-}
-
 a:hover {
     text-decoration: none;
     cursor: pointer;
@@ -270,6 +264,11 @@ a:hover {
 .row-no-gutters {
     margin-right: 0;
     margin-left: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
 }
 
 .row.row-no-gutters > [class^="col-"],
@@ -320,12 +319,12 @@ a:hover {
 .nav > li {
     float: left;
     font-size: 16px;
-    padding: 16px;
     list-style-type: none;
 }
-
-li:link{
+.site-navigation li a{
     text-decoration: none;
+    padding: 15px;
+    text-align: center;
 }
 
 .navbar-nav .open .dropdown-menu > li > a {
@@ -356,10 +355,13 @@ li:link{
     float: left;
 }
 
-.navbar-header{
+.navbar-page2{
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
+    width: 100%;
+    gap: 32px;
+
 }
 
 .nav-invert .navbar-header,
@@ -652,7 +654,6 @@ h4,
 h5,
 h6,
 p,
-label,
 .btn,
 a {
     font-family: "helvetica";
@@ -683,18 +684,11 @@ a {
 }
 
 p {
-    font-size: 18px;
-    padding: 16px;
-}
+    font-size: 18px;}
 
 .author-commentary{
     font-size: 14px;
     padding-top: 0;
-}
-
-.tight-width-whitespace {
-    max-width: 600px;
-    margin: auto auto auto auto;
 }
 
 .h1 {
@@ -777,9 +771,6 @@ h4 {
 }
 
 .bold-link {
-    position: absolute;
-    left: 153px;
-    bottom: -6px;
     font-weight: 700;
     border-radius: 40px;
     padding: 12px;
@@ -802,6 +793,7 @@ h4 {
 
 .bgc-atomic-tangerine {
     background-color: #303030;
+    padding: 32px;
 }
 
 .tc-white {
@@ -845,6 +837,16 @@ h4 {
 
 .bg-presentation {
     background-image: url("img/banner-middle.webp");
+}
+
+.col-sm-6 p{
+    text-align: center;
+    padding: 4px;
+}
+
+.col-sm-6 a {
+    display: grid;
+    place-items: center;
 }
 
 @media (max-width: 1024px) {
@@ -938,6 +940,11 @@ h4 {
     .navbar.row {
         margin-left: 0;
         margin-right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        gap: 32px;
     }
     .site-navigation {
         position: inherit;
@@ -978,6 +985,7 @@ h4 {
         right: -1px;
     }
     .navbar-collapse {
+        display: block;
         padding: 0;
         overflow-x: hidden;
         -webkit-box-shadow: none;
