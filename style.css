@@ -5,6 +5,7 @@ body {
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    min-width: 280px;
 }
 
 a:hover {
@@ -36,6 +37,14 @@ a:hover {
 .bloc .container {
     padding-left: 0;
     padding-right: 0;
+}
+
+.container .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    gap: 32px;
 }
 
 .bloc-lg {
@@ -863,14 +872,14 @@ h4 {
     }
 }
 
-@media (max-width: 992px) and (min-width: 768px) {
+/* @media (max-width: 992px) and (min-width: 768px) {
     .navbar .nav {
         max-width: 80%
     }
     .nav-center.navbar .nav {
         max-width: 100%
     }
-}
+} */
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
@@ -891,11 +900,12 @@ h4 {
     .b-parallax {
         background-attachment: scroll;
     }
-    .page-container,
+
+    /* .page-container,
     #hero-bloc {
         overflow-x: hidden;
         position: relative;
-    }
+    } */
     /* .bloc {
         padding-left: constant(safe-area-inset-left);
         padding-right: constant(safe-area-inset-right);
@@ -937,14 +947,14 @@ h4 {
         border-top: 1px solid rgba(0, 0, 0, .2);
         float: none!important;
     }
-    .navbar.row {
+    .navbar-header{
+        display: grid;
+        place-items: center;
+    }
+    .container .navbar {
         margin-left: 0;
         margin-right: 0;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 100%;
-        gap: 32px;
+        display: block;
     }
     .site-navigation {
         position: inherit;
