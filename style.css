@@ -475,11 +475,6 @@ button {
     text-shadow: 0 1px 0 rgba(0, 0, 1, .1);
     box-shadow: 0 1px 3px rgba(0, 0, 1, .25), inset 0 1px 0 0 rgba(255, 255, 255, .15);
 }
-
-.social-size {
-    font-size: 30px!important;
-}
-
 .icon-lg {
     font-size: 60px!important;
 }
