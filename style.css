@@ -700,6 +700,7 @@ p {
 .social {
     max-width: 400px;
     margin: auto auto auto auto;
+    color: white;
 }
 
 h2 {
@@ -760,7 +761,7 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: #303030;
     padding: 40px 40px 40px 40px;
 }
 
@@ -786,6 +787,7 @@ h4 {
 
 .tc-white {
     color: white!important;
+    background-color: #303030;
 }
 
 .btn-atomic-tangerine {
@@ -795,6 +797,11 @@ h4 {
 .btn-atomic-tangerine:hover {
     background: #505050;
     color: #FFFFFF;
+}
+
+.btn-atomic-tangerine:focus {
+    background: #505050;
+    border : 3px solid #303030;
 }
 
 .bg-banniere {
@@ -814,6 +821,13 @@ h4 {
     display: grid;
     place-items: center;
 }
+
+.project-title{
+    background-color: #303030;
+    color: white;
+    font-size: xx-large;
+}
+
 
 @media (max-width: 1024px) {
     .bloc {
