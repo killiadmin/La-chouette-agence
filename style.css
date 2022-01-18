@@ -834,8 +834,10 @@ h4 {
 }
 
 .project-title{
-    color: #BF8165;
+    color: #a85129;
     font-size: xx-large;
+    text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+    font-weight: 600;
 }
 
 
