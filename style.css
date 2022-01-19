@@ -95,6 +95,11 @@ a:hover {
     background-size: auto!important;
 }
 
+.texture-paper::before{
+    background: url(img/texture-paper.png);
+    background-size: 280px 280px;
+}
+
 .bg-repeat {
     background: repeat;
 }
@@ -655,6 +660,7 @@ a {
 
 .hero-bloc-text {
     font-size: 38px;
+    font-weight: 600;
 }
 
 .hero-bloc-text-sub {
@@ -805,6 +811,10 @@ h4 {
     background: #F3976C;
 }
 
+.bg-dots-bg {
+    background-image: url(img/dots-bg.png);
+}
+
 .btn-atomic-tangerine:hover {
     background: #b87150;
     color: #311E16;
@@ -823,8 +833,18 @@ h4 {
     background-image: url("img/banner-middle.webp");
 }
 
+.col-sm-6 {
+    display: grid;
+    place-items: center;
+}
+
+.col-sm-6 img{
+    margin-top: 18px;
+}
+
 .col-sm-6 p{
     text-align: center;
+    margin-top: 18px;
     padding: 4px;
 }
 
